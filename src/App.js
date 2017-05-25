@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import { MyComponent, MyComponent2 } from './modules/'
+import { Store, MyComponent2 } from './modules/'
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <MyComponent />
-        <MyComponent2 />
+        <MuiThemeProvider>
+	        <Store />
+	     </MuiThemeProvider>
+	   	<MyComponent2 />        
       </div>
     );
   }

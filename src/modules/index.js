@@ -2,8 +2,8 @@
 // this is only example component
 // you can find tests in __test__ folder
 
-import MyComponent from './MyComponent'
+import Store from './Store'
 import MyComponent2 from './MyComponent2'
-import './root.css'
+import './css/root.css'
 
-export { MyComponent, MyComponent2 }
+export { Store, MyComponent2 }

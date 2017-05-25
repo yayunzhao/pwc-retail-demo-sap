@@ -1,0 +1,161 @@
+div::-webkit-scrollbar, main::-webkit-scrollbar {
+  display: none;
+}
+
+#preload-image1 { background: url(/images/hipguyandjoe.png) no-repeat -9999px -9999px; }
+#preload-image2 { background: url(/images/hipguyandshadow.png) no-repeat -9999px -9999px; }
+
+.cross-fade-leave {
+  opacity: 1;
+}
+.cross-fade-leave.cross-fade-leave-active {
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+}
+
+.cross-fade-enter {
+  opacity: 0;
+}
+.cross-fade-enter.cross-fade-enter-active {
+  opacity: 1;
+  transition: opacity 0.3s ease-in;
+}
+
+.cross-fade-height {
+  transition: height .3s ease-in-out, width .3s;
+}
+
+.range-slider {
+  margin-bottom: 60px;
+  margin-top: 30px;
+  background: #E0301E;
+  height: 580px;
+}
+
+.bar {
+  width: 100%;
+}
+
+.cursor {
+  position: absolute;
+  right: 0;
+}
+
+.cursor > span {
+	display: block;
+  cursor: -webkit-grab;
+	position: absolute;
+	bottom: -16px;
+	left: 6px;
+	height: 30px;
+	border-radius: -91px;
+	width: 30px;
+	font-size: 10px;
+	border-radius: 50%;
+	background: black;
+}
+
+.cursor > span:active {
+  cursor: -webkit-grabbing;
+}
+
+
+.cursor > span::before {
+	width: 0;
+	position: absolute;
+	left: -6px;
+	top: 6px;
+	height: 0;
+	border-top: 8px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-right: 9px solid black;
+	content: '';
+	pointer-events: none;
+}
+
+
+.cursor > span > span {
+  display: none;
+}
+
+.cursor.header span {
+  display: none;
+}
+
+.cursor5 {
+  display: none;
+}
+
+.bar > div > div {
+  font-weight: 300;
+}
+
+.bar > div > div:first-child {
+  margin-bottom: 6px;
+  font-size: 16px;
+}
+
+.bar-0 {
+  background: #11BFCD
+}
+.bar-1 {
+  background: #5DCB1C
+}
+.bar-2 {
+  background: #EE9F16
+}
+.bar-3 {
+  background: #9C8DA4
+}
+.bar-4 {
+  background: #E0301E
+}
+
+
+/* NOTE: this is a hack to get around Meteor's Iron Router not allowing us
+ * to override the 404 route via notFoundTemplate (broken mebe?)
+ *
+ * Because Iron Router doesn't know about React's routes, it puts a div
+ * on the bottom of every page. Normally it's covered by the page content,
+ * but if the content is smaller than 600px (i.e. on mobile), a scroll bar
+ * appears.
+ *
+ * In order to ensure a.) we still see 404 error messages for _actual_
+ * 404s, b.) that we have access to the correct element, and c.) that
+ * the element fits the viewport, we use the following hack
+ */
+div[style="width: 600px; margin: 0 auto; padding: 20px;"] {
+  width: 100vw!important;
+  word-wrap: break-word;
+}
+
+.catagoryCard .react-d3-core__legend {
+  display: none;
+}
+
+.multiStoresCard .react-d3-core__legend {
+  margin-left: 5px;
+  height: 50px;
+  background: url('/images/legend.png') no-repeat;
+  background-size: contain;
+}
+.multiStoresCard .react-d3-core__legend * {
+  display: none !important;
+}
+.multiStoresCard .react-d3-core__grid_axis .tick line{
+  display: none;
+}
+.multiStoresCard .react-d3-core__grid_axis .tick:first-child line{
+  display: inherit;
+}
+.multiStoresCard .react-d3-core__axis__yAxis line,
+.multiStoresCard .react-d3-core__axis__yAxis text{
+  display: none;
+}
+.multiStoresCardTitle + div {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.multiStoresCardTitle + div > div{
+  margin-top: 12px;
+}

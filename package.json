@@ -8,9 +8,17 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "js-yaml": "^3.8.4",
+    "material-ui": "^0.18.1",
+    "muicss": "^0.9.16",
     "react": "^15.5.4",
+    "react-addons-css-transition-group": "^15.5.2",
+    "react-d3-basic": "^1.6.11",
     "react-dom": "^15.5.4",
-    "request": "^2.81.0"
+    "react-measure": "^1.4.7",
+    "react-router": "^4.1.1",
+    "react-tap-event-plugin": "^2.0.1",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1"
   },
   "devDependencies": {
     "autoprefixer": "7.1.0",
