@@ -7,8 +7,10 @@ import React from 'react'
 import Measure from 'react-measure'
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 import d3 from 'd3'
-import images from './images'
 import injectTapEventPlugin from 'react-tap-event-plugin';
+import Imagelegend from './images/legend2.png'
+import Imagesatisfaction from './images/satisfaction.png'
+
 injectTapEventPlugin();
 
 const Dialogs = {
@@ -252,7 +254,7 @@ class Store extends React.Component {
                         name={this.getName.bind(this)}
                         margins={{left:5, right:5, top:0, bottom:0}}
                       />
-                      <img src={images.legend} alt='' style={{width: "100%", marginBottom: 20, marginTop: -20}} />
+                      <img src={Imagelegend} alt='' style={{width: "100%", marginBottom: 20, marginTop: -20}} />
                     </div>
                     <Divider />
                     <CardActions>
@@ -273,7 +275,7 @@ class Store extends React.Component {
            <div>
             <Card style={styles.dashboardCard}>
               <CardMedia>
-                <img src={images.satisfaction} alt=''/>
+                <img src={Imagesatisfaction} alt=''/>
               </CardMedia>
               <div
                 style={styles.splitter}>

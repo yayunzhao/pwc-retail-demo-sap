@@ -3,21 +3,18 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.MyComponent2 = exports.Store = undefined;
+exports.StoreComponent = undefined;
 
-var _Store = require('./Store');
+var _StoreComponent = require('./StoreComponent');
 
-var _Store2 = _interopRequireDefault(_Store);
-
-var _MyComponent = require('./MyComponent2');
-
-var _MyComponent2 = _interopRequireDefault(_MyComponent);
+var _StoreComponent2 = _interopRequireDefault(_StoreComponent);
 
 require('./css/root.css');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-exports.Store = _Store2.default;
-exports.MyComponent2 = _MyComponent2.default; // Demo component
+// Demo component
 // this is only example component
 // you can find tests in __test__ folder
+
+exports.StoreComponent = _StoreComponent2.default;
