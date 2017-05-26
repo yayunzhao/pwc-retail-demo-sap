@@ -8,3 +8,8 @@
 .eslintrc
 npm-debug.log
 lib
+scripts
+config
+build
+public
+src

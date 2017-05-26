@@ -30,13 +30,17 @@ var _d = require('d3');
 
 var _d2 = _interopRequireDefault(_d);
 
-var _images = require('./images');
-
-var _images2 = _interopRequireDefault(_images);
-
 var _reactTapEventPlugin = require('react-tap-event-plugin');
 
 var _reactTapEventPlugin2 = _interopRequireDefault(_reactTapEventPlugin);
+
+var _legend = require('./images/legend2.png');
+
+var _legend2 = _interopRequireDefault(_legend);
+
+var _satisfaction = require('./images/satisfaction.png');
+
+var _satisfaction2 = _interopRequireDefault(_satisfaction);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -327,7 +331,7 @@ var Store = function (_React$Component) {
                   name: this.getName.bind(this),
                   margins: { left: 5, right: 5, top: 0, bottom: 0 }
                 }),
-                _react2.default.createElement('img', { src: _images2.default.legend, alt: '', style: { width: "100%", marginBottom: 20, marginTop: -20 } })
+                _react2.default.createElement('img', { src: _legend2.default, alt: '', style: { width: "100%", marginBottom: 20, marginTop: -20 } })
               ),
               _react2.default.createElement(_materialUi.Divider, null),
               _react2.default.createElement(
@@ -355,7 +359,7 @@ var Store = function (_React$Component) {
               _react2.default.createElement(
                 _materialUi.CardMedia,
                 null,
-                _react2.default.createElement('img', { src: _images2.default.satisfaction, alt: '' })
+                _react2.default.createElement('img', { src: _satisfaction2.default, alt: '' })
               ),
               _react2.default.createElement('div', {
                 style: styles.splitter }),

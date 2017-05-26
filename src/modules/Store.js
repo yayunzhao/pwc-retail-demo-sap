@@ -7,11 +7,8 @@ import React from 'react'
 import Measure from 'react-measure'
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 import d3 from 'd3'
-import injectTapEventPlugin from 'react-tap-event-plugin';
 import Imagelegend from './images/legend2.png'
 import Imagesatisfaction from './images/satisfaction.png'
-
-injectTapEventPlugin();
 
 const Dialogs = {
   mentors: 'MENTORS',
